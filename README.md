@@ -68,3 +68,12 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+### cài đặt firebase localhost npm i -g firebase-tools   
+b1 : cd src/emulators 
+b2 : firebase loin 
+b3 : firebase init 
+b4 : firebase emulators:start  
+    chọn 1 dịch vụ nhấn space để chọn, sau đó nhấn enter

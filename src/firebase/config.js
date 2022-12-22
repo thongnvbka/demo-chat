@@ -6,15 +6,12 @@ import { connectFirestoreEmulator, getFirestore } from "firebase/firestore";
 import { getStorage, connectStorageEmulator } from "firebase/storage";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyD1q6CnSceA_lpePw1k4yc4vHywd7p2QDQ",
-  authDomain: "chataap-34af1.firebaseapp.com",
-  databaseURL:
-    "https://chataap-34af1-default-rtdb.asia-southeast1.firebasedatabase.app",
-  projectId: "chataap-34af1",
-  storageBucket: "chataap-34af1.appspot.com",
-  messagingSenderId: "965239617544",
-  appId: "1:965239617544:web:895c5a6184da8a0cb4f9bd",
-  measurementId: "G-6G3DSF9VJD",
+  apiKey: "AIzaSyDLln03vsiGTEpkKfPqmjjVI0PcIq71Qv0",
+  authDomain: "demochat-474fc.firebaseapp.com",
+  projectId: "demochat-474fc",
+  storageBucket: "demochat-474fc.appspot.com",
+  messagingSenderId: "643213553823",
+  appId: "1:643213553823:web:2ac4a1d5831682a82972aa"
 };
 
 const app = initializeApp(firebaseConfig);
@@ -24,10 +21,10 @@ const auth = getAuth(app);
 const db = getFirestore(app);
 const storage = getStorage(app);
 
-if (window.location.hostname === "localhost") {
-  connectAuthEmulator(auth, "http://localhost:9099");
-  connectFirestoreEmulator(db, "localhost", 8080);
-  connectStorageEmulator(storage, "localhost", 9199);
-}
+// if (window.location.hostname === "localhost") {
+//   connectAuthEmulator(auth, "http://localhost:9099");
+//   connectFirestoreEmulator(db, "localhost", 8080);
+//   connectStorageEmulator(storage, "localhost", 9199);
+// }
 
 export { auth, db, storage };
