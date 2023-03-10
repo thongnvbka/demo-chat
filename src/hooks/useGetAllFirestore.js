@@ -10,6 +10,7 @@ function useGetAllFirestore(collectionName, callback, callbackError) {
 
   useEffect(() => {
     if (uid) {
+      console.log('uid', uid)
       const unsubscribe = onSnapshot(
         collection(db, collectionName),
         (snapshot) => {

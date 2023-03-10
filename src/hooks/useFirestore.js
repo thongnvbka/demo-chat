@@ -35,9 +35,10 @@ function useFirestore(collectionName, condition, callback, callbackError) {
         (snapshot) => {
           // Lặp qua snapshot để lấy mảng dữ liệu
           const documents = snapshot.docs.map((doc) => {
+
             let data = doc.data();
             let docId = doc.id;
-
+            console.log('data', data)
             return {
               ...data,
               id: docId,

@@ -6,12 +6,12 @@ import { connectFirestoreEmulator, getFirestore } from "firebase/firestore";
 import { getStorage, connectStorageEmulator } from "firebase/storage";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDLln03vsiGTEpkKfPqmjjVI0PcIq71Qv0",
-  authDomain: "demochat-474fc.firebaseapp.com",
-  projectId: "demochat-474fc",
-  storageBucket: "demochat-474fc.appspot.com",
-  messagingSenderId: "643213553823",
-  appId: "1:643213553823:web:2ac4a1d5831682a82972aa"
+  apiKey: "AIzaSyBeMfp8srsuIl8JcSo3b7b4tM9ab2EXB34",
+  authDomain: "fir-e8c83.firebaseapp.com",
+  projectId: "fir-e8c83",
+  storageBucket: "fir-e8c83.appspot.com",
+  messagingSenderId: "72484656511",
+  appId: "1:72484656511:web:c36cd9e67ea1e7a9b3764a"
 };
 
 const app = initializeApp(firebaseConfig);
@@ -23,7 +23,7 @@ const storage = getStorage(app);
 
 // if (window.location.hostname === "localhost") {
 //   connectAuthEmulator(auth, "http://localhost:9099");
-//   connectFirestoreEmulator(db, "localhost", 8080);
+//   connectFirestoreEmulator(db, "localhost", 6000);
 //   connectStorageEmulator(storage, "localhost", 9199);
 // }
 
